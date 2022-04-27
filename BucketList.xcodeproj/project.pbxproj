@@ -14,6 +14,8 @@
 		6FD805D42816AB3100B04664 /* BucketListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD805D32816AB3100B04664 /* BucketListTests.swift */; };
 		6FD805DE2816AB3100B04664 /* BucketListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD805DD2816AB3100B04664 /* BucketListUITests.swift */; };
 		6FD805E02816AB3100B04664 /* BucketListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD805DF2816AB3100B04664 /* BucketListUITestsLaunchTests.swift */; };
+		6FD805ED2818438000B04664 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD805EC2818438000B04664 /* Locations.swift */; };
+		6FD805EF2818621C00B04664 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD805EE2818621C00B04664 /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		6FD805D92816AB3100B04664 /* BucketListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BucketListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD805DD2816AB3100B04664 /* BucketListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListUITests.swift; sourceTree = "<group>"; };
 		6FD805DF2816AB3100B04664 /* BucketListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6FD805EC2818438000B04664 /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+		6FD805EE2818621C00B04664 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			children = (
 				6FD805C22816AB2F00B04664 /* BucketListApp.swift */,
 				6FD805C42816AB2F00B04664 /* ContentView.swift */,
+				6FD805EE2818621C00B04664 /* EditView.swift */,
+				6FD805EC2818438000B04664 /* Locations.swift */,
 				6FD805C62816AB3100B04664 /* Assets.xcassets */,
 				6FD805C82816AB3100B04664 /* Preview Content */,
 			);
@@ -257,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FD805ED2818438000B04664 /* Locations.swift in Sources */,
 				6FD805C52816AB2F00B04664 /* ContentView.swift in Sources */,
+				6FD805EF2818621C00B04664 /* EditView.swift in Sources */,
 				6FD805C32816AB2F00B04664 /* BucketListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
