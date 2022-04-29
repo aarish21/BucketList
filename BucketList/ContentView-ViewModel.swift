@@ -7,15 +7,17 @@
 
 import Foundation
 import MapKit
-
+import LocalAuthentication
+import SwiftUI
 extension ContentView{
     @MainActor class ViewModel: ObservableObject {
         @Published var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50, longitude: 0), span: MKCoordinateSpan(latitudeDelta: 25, longitudeDelta: 25))
         
         @Published private(set) var locations = [Location]()
         @Published var selectedPlace: Location?
-        
-        
+        @Published var unlockError = false
+        @Published var isUnlocked = false
+        @Published var errorMessage = ""
         let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedPlaces")
         init() {
             do {
@@ -44,6 +46,31 @@ extension ContentView{
             } catch {
                 print("Unable to save data.")
             }
+        }
+        func authenticate(){
+            let context = LAContext()
+            var error: NSError?
+            context.localizedCancelTitle = "Cancel"
+            if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error){
+                let reason = "Please authenticate yourself to unlock your places."
+                context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: reason) { success, authenticationError in
+                    if success{
+                        Task{ @MainActor in
+                            self.isUnlocked = true
+                        }
+                    }else{
+                        Task{@MainActor in
+                            self.unlockError = true
+                            self.errorMessage = authenticationError?.localizedDescription ?? "Unknown error"
+                        }
+                    }
+                }
+            }else{
+                self.isUnlocked = true
+                
+                 
+            }
+            
         }
     }
 }
