@@ -19,6 +19,7 @@
 		6FD805F128195E9000B04664 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD805F028195E9000B04664 /* Result.swift */; };
 		6FD805F3281B142100B04664 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD805F2281B142100B04664 /* ContentView-ViewModel.swift */; };
 		6FD805F5281B163A00B04664 /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD805F4281B163A00B04664 /* FileManager-DocumentsDirectory.swift */; };
+		6FF06AEB281ED17400565130 /* EditView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF06AEA281ED17400565130 /* EditView-ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		6FD805F028195E9000B04664 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		6FD805F2281B142100B04664 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
 		6FD805F4281B163A00B04664 /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
+		6FF06AEA281ED17400565130 /* EditView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditView-ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +110,9 @@
 				6FD805C42816AB2F00B04664 /* ContentView.swift */,
 				6FD805F4281B163A00B04664 /* FileManager-DocumentsDirectory.swift */,
 				6FD805F2281B142100B04664 /* ContentView-ViewModel.swift */,
-				6FD805F028195E9000B04664 /* Result.swift */,
 				6FD805EE2818621C00B04664 /* EditView.swift */,
+				6FF06AEA281ED17400565130 /* EditView-ViewModel.swift */,
+				6FD805F028195E9000B04664 /* Result.swift */,
 				6FD805EC2818438000B04664 /* Locations.swift */,
 				6FD805C62816AB3100B04664 /* Assets.xcassets */,
 				6FD805C82816AB3100B04664 /* Preview Content */,
@@ -277,6 +280,7 @@
 				6FD805F3281B142100B04664 /* ContentView-ViewModel.swift in Sources */,
 				6FD805F128195E9000B04664 /* Result.swift in Sources */,
 				6FD805C52816AB2F00B04664 /* ContentView.swift in Sources */,
+				6FF06AEB281ED17400565130 /* EditView-ViewModel.swift in Sources */,
 				6FD805EF2818621C00B04664 /* EditView.swift in Sources */,
 				6FD805C32816AB2F00B04664 /* BucketListApp.swift in Sources */,
 			);
